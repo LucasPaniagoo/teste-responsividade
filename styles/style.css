@@ -1,0 +1,120 @@
+    @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+    :root{
+        --cor-background: #219C90;
+        --cor-primaria: #FFFFFF;
+        --cor-secundaria: #EE9322;
+        --cor-hover: #29bbac;
+
+        --fonte-primaria: 'Krona One', sans-serif;
+        --fonte-secundaria: 'Montserrat', sans-serif;
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background-color: var(--cor-background);
+    color: var(--cor-secundaria);
+    box-sizing: border-box;
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho_link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
+}
+.destaque{
+    color: var(--cor-primaria);
+}
+.principal{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.principal__section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.principal__section__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+.principal__section__conteudo{
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+}
+.principal__section__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+}
+.principal__section__links_subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.principal__imagem{
+    width: 50%;
+}
+.link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-primaria) ;
+    width: 50%;
+    padding: 21.5px 0;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    color: var(--cor-secundaria);
+}
+.link:hover{
+    background-color: var(--cor-hover);
+}
+.rodape{
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    padding: 26px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.rodape_about{
+    margin-top: 5%;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho_menu{
+        justify-content: center;
+    }
+    .principal{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .principal__section{
+        width: auto;
+    }
+}
